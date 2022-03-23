@@ -34,10 +34,47 @@ h3 {
 }
 .content {
     background-color:white;
+    border-style: solid;
+    border-color: darkgrey;
+    border-width: 1px;
+    border-radius: 8px;
 }
 .blue {
     color: blue;
 }
 .fancy {
     font-family: cursive;
+}
+.red-border{
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+.red-outline{
+    outline: 1px solid red;
+}
+.blue-border{
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+}
+.red-top-border{
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-bottom-style: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.blue-bottom-border{
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+hr {
+    border-style: solid;
+    border-color: #CFDFE4;
+    border-width: 1px;
 }

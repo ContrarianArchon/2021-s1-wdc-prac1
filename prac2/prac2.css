@@ -84,14 +84,14 @@ hr {
 }
 .inner-one{
     background-color:yellow;
-    border:1px red solid;
+    border:red solid;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 20px;
     margin-left: 20px;
     padding: 12px;
-    width:698px;
-    height:198px;
+    width:694px;
+    height:194px;
     text-align:right;
 
 }
@@ -102,10 +102,10 @@ hr {
 }
 .inner-two{
     background-color:yellow;
-    border:1px red solid;
+    border:red solid;
     padding: 12px;
-    height:398px;
-    width:398px;
+    height:394px;
+    width:394px;
     text-align:right;
   margin: auto;
 }

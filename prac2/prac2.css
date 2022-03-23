@@ -2,6 +2,7 @@ body{
     background-image: url("cross.png");
     background-repeat: repeat;
     background-color:#DCF5F5;
+    font-family: 'Noto Serif', monospace;
 }
 h1 {
     font-family: Raleway, sans-serif;

@@ -4,10 +4,10 @@ body{
     background-color:#DCF5F5;
 }
 h1 {
-    font-family: sans-serif;
+    font-family: Raleway, sans-serif;
 }
 p {
-    font-family: serif;
+    font-family: 'Noto Serif', monospace;
 }
 a {
     color: darkgreen;
@@ -21,7 +21,7 @@ mark {
 }
 h2 {
     text-align: left;
-    font-family: sans-serif;
+    font-family: Raleway, sans-serif;
 }
 pre {
     font-family: monospace;
@@ -108,4 +108,23 @@ hr {
     width:374px;
     text-align:right;
   margin: auto;
+}
+.icon-storage{
+    text-align:center;
+}
+.icon-color{
+    color:#BFCFD4
+}
+blockquote {
+    color:dimgrey;
+    line-height:1.5;
+    font-family: Raleway, sans-serif;
+    word-spacing: 0.2em;
+    text-align:justify;
+}
+h4 {
+    font-family: Raleway, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: underline;
 }

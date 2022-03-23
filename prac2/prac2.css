@@ -21,3 +21,9 @@ h2 {
 pre {
     font-family: monospace;
 }
+h3 {
+    color:rgba(0,0,139,0.8);
+}
+.transparent-text {
+    color:rgba(0,0,0,0.5);
+}

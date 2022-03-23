@@ -78,3 +78,34 @@ hr {
     border-color: #CFDFE4;
     border-width: 1px;
 }
+.outer-one{
+    background-color:blue;
+    border:1px red solid;
+}
+.inner-one{
+    background-color:yellow;
+    border:1px red solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 12px;
+    width:698px;
+    height:198px;
+    text-align:right;
+
+}
+.outer-two{
+    background-color:blue;
+    border:1px red solid;
+    margin-top: 20px;
+}
+.inner-two{
+    background-color:yellow;
+    border:1px red solid;
+    padding: 12px;
+    height:398px;
+    width:398px;
+    text-align:right;
+  margin: auto;
+}

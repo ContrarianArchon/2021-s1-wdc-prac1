@@ -11,6 +11,8 @@ const MenuBtn = document.getElementById("MenuBtn");
 MenuBtn.addEventListener("click", showMenu);
 const BackBtn = document.getElementById("BackBtn");
 BackBtn.addEventListener("click", hideMenu);
+const ColorInput = document.getElementById("ColorInput");
+ColorInput.addEventListener("blur", updateColor);
 
 function makePost(){
     //make paragraph, class "post-date" with the current date in it
@@ -43,4 +45,8 @@ function showMenu(){
 function hideMenu(){
     document.getElementById("menu").style.display = "none";
     document.getElementById("main").style.display = "inline-block";
+}
+
+function updateColor(){
+    console.log("function fired");
 }

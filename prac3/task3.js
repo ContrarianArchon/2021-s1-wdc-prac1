@@ -4,9 +4,13 @@ function CountIncrement(x){
     x.innerHTML = count;
 }
 
-//on event: clicking the post button
-const element = document.getElementById("PostBtn");
-element.addEventListener("click", makePost);
+//Event listeners for buttons
+const PostBtn = document.getElementById("PostBtn");
+PostBtn.addEventListener("click", makePost);
+const MenuBtn = document.getElementById("menuBtn");
+MenuBtn.addEventListener("click", showMenu());
+const BackBtn = document.getElementById("backBtn");
+BackBtn.addEventListener("click", hideMenu());
 
 function makePost(){
 //make paragraph, class "post-date" with the current date in it
@@ -16,4 +20,12 @@ document.getElementById("posts").innerHTML += "<p class='post-time'>" + d + "</p
 var text = document.getElementById("TextInput").value;
 //make paragraph, class post-content, with the extracted text in it.
 document.getElementById("posts").innerHTML += "<p class='post-content'>" + text + "</p>";
+}
+
+function showMenu(){
+
+}
+
+function hideMenu(){
+    
 }

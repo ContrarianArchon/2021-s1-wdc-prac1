@@ -7,10 +7,10 @@ function CountIncrement(x){
 //Event listeners for buttons
 const PostBtn = document.getElementById("PostBtn");
 PostBtn.addEventListener("click", makePost);
-const MenuBtn = document.getElementById("menuBtn");
-MenuBtn.addEventListener("click", showMenu());
-const BackBtn = document.getElementById("backBtn");
-BackBtn.addEventListener("click", hideMenu());
+const MenuBtn = document.getElementById("MenuBtn");
+MenuBtn.addEventListener("click", showMenu);
+const BackBtn = document.getElementById("BackBtn");
+BackBtn.addEventListener("click", hideMenu);
 
 function makePost(){
 //make paragraph, class "post-date" with the current date in it
@@ -23,9 +23,11 @@ document.getElementById("posts").innerHTML += "<p class='post-content'>" + text 
 }
 
 function showMenu(){
-
+    document.getElementById("menu").style.display = "inline-block";
+    document.getElementById("main").style.display = "none";
 }
 
 function hideMenu(){
-    
+    document.getElementById("menu").style.display = "none";
+    document.getElementById("main").style.display = "inline-block";
 }

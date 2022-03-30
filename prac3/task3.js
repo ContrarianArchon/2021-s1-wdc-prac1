@@ -14,6 +14,13 @@ BackBtn.addEventListener("click", hideMenu);
 const ColorInput = document.getElementById("ColorInput");
 ColorInput.addEventListener("blur", updateColor);
 
+//color validity testing.
+function isValidColor(strColor) {
+    var s = new Option().style;
+    s.color = strColor;
+    return s.color == strColor.toLowerCase();
+  }
+
 function makePost(){
     //make paragraph, class "post-date" with the current date in it
     var d = new Date();
@@ -48,5 +55,9 @@ function hideMenu(){
 }
 
 function updateColor(){
-    console.log("function fired");
+    //console.log("function fired");
+    var color = ColorInput.value;
+    //if(isValidColor(color)){
+        document.body.style.backgroundColor = color;
+    //}
 }

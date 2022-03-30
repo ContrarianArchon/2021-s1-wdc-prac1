@@ -44,3 +44,11 @@ hr {
     clear: both;
 }
 
+.post-time {
+    font-weight:bold;
+    color:grey
+}
+
+.post-content{
+    
+}

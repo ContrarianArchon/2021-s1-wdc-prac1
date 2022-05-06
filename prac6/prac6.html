@@ -37,9 +37,9 @@
 
             <div class="pad" id="ad">
                 <button class="pure-button" style="float:right;" onclick="vueinst.show_ad = false;">close</button>
-                <img src="" alt="" onclick="vueinst.special=SPECIALS[Math.floor((Math.random() * 3))];" />
-                <h3>Some Name</h3>
-                <p>$Some.Price</p>
+                <img :src=special.url alt="" onclick="vueinst2.special=SPECIALS[Math.floor((Math.random() * 3))];" />
+                <h3>{{special.name}}</h3>
+                <p>{{special.price}}</p>
             </div>
 
 
@@ -60,7 +60,7 @@
 
                     <h3>Salt or Pepper?</h3>
                     <!-- TASK 1.1 -->
-                    <p id="sp"></p>
+                    <p id="sp">{{choose}}</p>
                     <button class="pure-button pure-u-1-4" onclick="vueinst.choose='Salt';">Salt</button>
                     <button class="pure-button pure-u-1-4" onclick="vueinst.choose='Pepper!';">Pepper</button>
 

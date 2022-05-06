@@ -10,14 +10,14 @@ Top menu (task 1.5):
 Top menu 2 (task 1.7):
 
 { title:'Home', url:'/', submenus: [] }
-{ title:'About', url:'/about', 
+{ title:'About', url:'/about',
     submenus: [
         { title:'Who we are',   url:'/about#us' },
         { title:'What we do',   url:'/about#store' },
         { title:'Our range',     url:'/about#range' }
     ]
 }
-{ title:'Contact Us',   url:'/contact', 
+{ title:'Contact Us',   url:'/contact',
     submenus: [
         { title:'Information',   url:'/contact#info' },
         { title:'Returns',   url:'/contact#return' },
@@ -42,5 +42,15 @@ const SPECIALS = [
 ];
 
 var vueinst = new Vue({
+    el: '#sp',
+    data: {
+      choose: 'Choose...'
+    }
+});
 
-}); 
+var vueinst2 = new Vue({
+    el: '#ad',
+    data: {
+        special: SPECIALS[0]
+    }
+})

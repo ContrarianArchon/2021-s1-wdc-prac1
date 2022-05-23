@@ -3,8 +3,14 @@ var router = express.Router();
 
 /* GET home page. */
 
+var lastmessage;
 router.get('/test.txt', function(req, res, next){
-  res.send("noise");
+  if (typeof lastmessage !== 'undefined'){
+    res.send(lastmessage.toString());
+  }else{
+    res.send();
+  }
+  lastmessage = new Date();
 });
 
 router.get('/', function(req, res, next) {

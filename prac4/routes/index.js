@@ -4,7 +4,6 @@ var router = express.Router();
 /* GET home page. */
 
 router.get('/test.txt', function(req, res, next){
-  var lastmessage = new Date;
   res.send("noise");
 });
 

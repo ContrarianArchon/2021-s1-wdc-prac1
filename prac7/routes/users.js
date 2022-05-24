@@ -5,8 +5,8 @@ router.post('/*', function(req, res, next){
   next();
 })
 router.post('/*', function(req, res, next){
-  if(req.get('content-type') == undefined){
-    res.status(418);
+  if(req.get('content-type') != "application/json"){
+    res.status(412);
     res.send();
   }else{
     next();

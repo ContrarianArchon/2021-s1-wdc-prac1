@@ -8,6 +8,13 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+var accesscount = 0;
+app.use(function(req, res, next){
+    accesscount++;
+    console.log("Received "+accesscount+" requests");
+    next();
+});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

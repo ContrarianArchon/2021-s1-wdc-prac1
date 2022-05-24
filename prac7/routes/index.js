@@ -14,6 +14,17 @@ router.get('/brew', function(req, res, next){
   }
 });
 
+/*message handling*/
+var message = "first";
+router.post('/pass-it-on', function(req, res, next){
+  if(req.body.message != undefined && req.body.message !== ""){
+    res.send(message);
+    message = req.body.message;
+  }else{
+    res.status(400);
+    res.send();
+  }
+});
 
 
 /* GET home page. */

@@ -26,9 +26,6 @@ router.post('/pass-it-on', function(req, res, next){
   }
 });
 
-router.get('/cookie', function(req, res, next){
-  
-});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

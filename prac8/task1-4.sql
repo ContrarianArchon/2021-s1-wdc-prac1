@@ -1,0 +1,1 @@
+SELECT film_in_stock(TWISTED PIRATES);

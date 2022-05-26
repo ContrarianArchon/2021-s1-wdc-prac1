@@ -1,1 +1,1 @@
-SELECT film_in_stock(TWISTED PIRATES);
+SELECT * FROM store, [the table tracking stock], [the table tracking film-ID correspondance], where [stock is greater than zero];

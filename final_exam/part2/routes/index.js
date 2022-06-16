@@ -117,6 +117,7 @@ router.post('/posts/:post_id/delete', function(req, res, next) {
   switch(req.session.user.role){
     case 'user':
       res.sendStatus(401);
+      break;
     case 'admin':
       break;
     default:

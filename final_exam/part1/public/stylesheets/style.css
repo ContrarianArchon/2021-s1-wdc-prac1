@@ -1,0 +1,54 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("./images/Stockholm_Grand_Hotel.JPG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main{
+  height: 1000px;
+  width: 50%;
+}
+.searchbar {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+  width: 600px;
+  background-color:rgba(221,221,221,0.9);
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 10px;
+}
+.footer {
+  background-color: #333;
+  width: 100%;
+  padding: 14px 16px;
+  color: #f2f2f2;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Grand Hotel!</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="javascripts/index.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="/index.html">Home</a>
+    <a href="/news.html">News</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/login.html">Login</a>
+    <a href="/book.html">Make a booking!</a>
+  </div>
+  <div class="main">
+    <div class="searchbar" id="app">
+      <h2>Find a room to book now!</h2>
+      Search by:
+      <h3>Room Type:</h3>
+      <input type="text" id="searchtext"></input><br>
+      <button id="text-submit">Search</button>
+      <h3>OR</h3>
+      <h3>Date of Booking:</h3>
+      Start Date:<input type=date id="start_date"></input><br>
+      End Date:<input type=date id="end_date"></input><br>
+      <button id="date-submit">Search</button>
+      <span id = "response-text">{{ searchtext }} {{ start_date }} {{ end_date }}</span>
+    </div>
+  </div>
+  <div class="footer"> Copyright James Roughan 2022 </div>
+</body>

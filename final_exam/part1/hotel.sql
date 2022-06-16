@@ -51,6 +51,7 @@ CREATE TABLE `bookings` (
 
 LOCK TABLES `bookings` WRITE;
 /*!40000 ALTER TABLE `bookings` DISABLE KEYS */;
+INSERT INTO `bookings` VALUES (1,1,1,'2019-01-01','2022-12-31'),(2,2,2,'2022-06-01','2022-06-07'),(3,2,2,'2022-06-10','2022-06-15');
 /*!40000 ALTER TABLE `bookings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -78,6 +79,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
+INSERT INTO `customers` VALUES (1,'person who lives at the hotel','fakename@gmail.com',99999,'password'),(2,'joe blogs','joe@bl.ogs',0,'qwerty'),(3,'very online customer','CaligulasAquarium@trollian.com',413,'hunter2');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,6 +110,7 @@ CREATE TABLE `logins` (
 
 LOCK TABLES `logins` WRITE;
 /*!40000 ALTER TABLE `logins` DISABLE KEYS */;
+INSERT INTO `logins` VALUES (1,3,'2022-06-16',NULL,0,NULL),(2,3,'2022-06-16','2022-06-18',1,300);
 /*!40000 ALTER TABLE `logins` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -133,6 +136,7 @@ CREATE TABLE `room_types` (
 
 LOCK TABLES `room_types` WRITE;
 /*!40000 ALTER TABLE `room_types` DISABLE KEYS */;
+INSERT INTO `room_types` VALUES (1,'Has two beds and an excellent view',100.00),(2,'Has one bed and a bad view',70.50);
 /*!40000 ALTER TABLE `room_types` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -161,6 +165,7 @@ CREATE TABLE `rooms` (
 
 LOCK TABLES `rooms` WRITE;
 /*!40000 ALTER TABLE `rooms` DISABLE KEYS */;
+INSERT INTO `rooms` VALUES (1,1,'2.0',3),(2,2,'1.1',1),(3,2,'1.2',1);
 /*!40000 ALTER TABLE `rooms` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -173,4 +178,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-16  5:37:30
+-- Dump completed on 2022-06-16  6:00:03

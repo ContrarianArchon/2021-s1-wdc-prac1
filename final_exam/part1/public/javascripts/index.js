@@ -1,5 +1,13 @@
+
+var vue = new Vue({
+  el: "#app",
+  data: {
+    rooms: []
+  }
+});
+
 function display_results(data){
-  alert(data);
+  vue.rooms = data;
 };
 
 $(document).ready(function(){

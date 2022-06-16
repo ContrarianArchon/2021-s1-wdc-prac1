@@ -3,8 +3,9 @@
 <head>
   <title>The Grand Hotel!</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="javascripts/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script defer src="javascripts/index.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <a href="/book.html">Make a booking!</a>
   </div>
   <div class="main">
-    <div class="searchbar" id="app">
+    <div class="searchbar">
       <h2>Find a room to book now!</h2>
       Search by:
       <h3>Room Type:</h3>
@@ -27,7 +28,13 @@
       Start Date:<input type=date id="start_date"></input><br>
       End Date:<input type=date id="end_date"></input><br>
       <button id="date-submit">Search</button>
-      <span id = "response-text">{{ searchtext }} {{ start_date }} {{ end_date }}</span>
+      <div id="app"><div class="room" v-for="room in rooms">
+        Room ID: {{room.room_id}}<br>
+        Room Name: {{room.room_name}}<br>
+        Room Description: {{room.room_description}}<br>
+        Price: {{room.price}}<br>
+        <a v-bind:href="'/book/'+room.room_id">Book here!</a>
+      </div></div>
     </div>
   </div>
   <div class="footer"> Copyright James Roughan 2022 </div>

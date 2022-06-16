@@ -1,4 +1,6 @@
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -114,7 +116,7 @@ h3 {
 }
 
 .sidebar {
-    background: rgb(61, 79, 93)
+    background: rgb(61, 79, 93),
     color: #fff;
 }
 

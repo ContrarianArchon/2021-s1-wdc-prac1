@@ -2,6 +2,14 @@ var argon2 = require('argon2');
 var express = require('express');
 var router = express.Router();
 
+router.use(function(req, res, next) {
+    if('user' in req.session){
+        next();
+    } else {
+        res.sendStatus(401);
+    }
+});
+
 router.post('/login', function(req, res, next) {
 
      if( 'username' in req.body && req.body.username != null &&
@@ -94,14 +102,6 @@ router.post('/signup', async function(req, res, next) {
 
 });
 
-
-router.use(function(req, res, next) {
-    if('user' in req.session){
-        next();
-    } else {
-        res.sendStatus(401);
-    }
-});
 
 
 router.post('/logout', function(req, res, next) {

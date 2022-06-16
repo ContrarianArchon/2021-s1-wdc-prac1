@@ -1,3 +1,7 @@
+function display_results(data){
+  alert(data);
+};
+
 $(document).ready(function(){
     $("#text-submit").click(function(){
       $.post("/search/text",
@@ -5,7 +9,7 @@ $(document).ready(function(){
         searchstring: document.getElementById("searchtext").value
       },
       function(data, status){
-        alert(data);
+        display_results(data);
       });
     });
     $("#date-submit").click(function(){
@@ -15,7 +19,7 @@ $(document).ready(function(){
           end_date: document.getElementById("end_date").value
         },
         function(data, status){
-          alert(data);
+          display_results(data);
         });
       });
 
